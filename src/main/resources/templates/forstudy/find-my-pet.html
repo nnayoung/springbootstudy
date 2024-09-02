@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>내 반려동물 찾기</title>
+</head>
+<body>
+
+<h2> 내 반려동물 찾기 서비스입니다. </h2>
+<p> 아래에 사용자 ID입력 후 찾기 버튼을 눌러보세요.</p>
+
+<form action="find-my-pet-view" method="get">
+  <label for="userId"> 사용자ID : </label>
+  <input type="text" id="userId" name="userId" placeholder="사용자ID 입력">
+  <input type="submit" value="찾기(화면반환버전)">
+</form>
+
+<form action="find-my-pet-data" method="get">
+  <label for="userId2"> 사용자ID : </label>
+  <input type="text" id="userId2" name="userId" placeholder="사용자ID 입력">
+  <input type="submit" value="찾기(데이터만반환버전)">
+</form>
+
+</body>
+</html>

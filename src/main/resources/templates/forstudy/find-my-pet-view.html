@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>조회 결과</title>
+
+  <style>
+    table { border-collapse: collapse; }
+    tr,td { border: 1px solid black; }
+  </style>
+
+</head>
+<body>
+
+<h2> <span th:text="${name}"></span> 님의 반려동물 조회 결과입니다. </h2>
+
+<table>
+  <tr>
+    <th>반려동물 목록</th>
+  </tr>
+
+  <tr th:each="pet : ${pets}">
+    <td th:text="${pet}"></td>
+  </tr>
+</table>
+
+</body>
+</html>
